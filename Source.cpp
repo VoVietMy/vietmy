@@ -11,10 +11,18 @@ int tong(int a, int b)
  return a+b;
 }
 int hieu(int a, int b);
+
+int tich(int a, int b){
+
+return a*b;
+}
+float thuong(int a, int b);
+=======
 int tich(int a, int b);
 float thuong(int a, int b){
 	return a*1.0/b;
 };
+
 int main()
 {
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
@@ -24,11 +32,18 @@ int main()
 	cout<<"Nhap so thu hai: ";
 	cin>>b;
 	cout<<a<<" + "<<b<<" = "<<tong(a+b)<<endl;
+
+	cout<<a<<" - "<<b<<" = "<<hieu(a-b)<<endl;
+	cout<<a<<" * "<<b<<" = "<<tich(a*b)<<endl;
+	cout<<a<<" / "<<b<<" = "<<thuong(a/b)<<endl;
+	system("pause");
+
 	cout<<a<<" - "<<b<<" = "<<hieu(a+b)<<endl;
 	cout<<a<<" * "<<b<<" = "<<tich(a+b)<<endl;
 	cout<<a<<" / "<<b<<" = "<<thuong(a+b)<<endl;
 	system("pause ");
 	
+
 	return 0;
 	
 }
