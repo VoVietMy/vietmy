@@ -1,6 +1,11 @@
 #include <iostream>
 
 using namespace std;
+int tong(int a, int b);
+int hieu(int a, int b)
+{
+		return a-b;
+}
 int tong(int a, int b)
 {
  return a+b;
@@ -22,6 +27,8 @@ int main()
 	cout<<a<<" - "<<b<<" = "<<hieu(a+b)<<endl;
 	cout<<a<<" * "<<b<<" = "<<tich(a+b)<<endl;
 	cout<<a<<" / "<<b<<" = "<<thuong(a+b)<<endl;
-	system("pause");
+	system("pause ");
+	
 	return 0;
+	
 }
