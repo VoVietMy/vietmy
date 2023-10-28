@@ -3,7 +3,10 @@
 using namespace std;
 int tong(int a, int b);
 int hieu(int a, int b);
-int tich(int a, int b);
+int tich(int a, int b){
+
+return a*b;
+}
 float thuong(int a, int b);
 int main()
 {
@@ -14,9 +17,9 @@ int main()
 	cout<<"Nhap so thu hai: ";
 	cin>>b;
 	cout<<a<<" + "<<b<<" = "<<tong(a+b)<<endl;
-	cout<<a<<" - "<<b<<" = "<<hieu(a+b)<<endl;
-	cout<<a<<" * "<<b<<" = "<<tich(a+b)<<endl;
-	cout<<a<<" / "<<b<<" = "<<thuong(a+b)<<endl;
+	cout<<a<<" - "<<b<<" = "<<hieu(a-b)<<endl;
+	cout<<a<<" * "<<b<<" = "<<tich(a*b)<<endl;
+	cout<<a<<" / "<<b<<" = "<<thuong(a/b)<<endl;
 	system("pause");
 	return 0;
 }
